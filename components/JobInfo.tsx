@@ -1,6 +1,15 @@
-import { JobType } from "@/utils/types";
-
-function JobInfo({ job }: { job: JobType }) {
-  return <h1 className="text-3xl">JobInfo</h1>;
+interface JobInfoProps {
+  icon: React.ReactNode;
+  text: string;
 }
+
+function JobInfo({ icon, text }: JobInfoProps) {
+  return (
+    <div className="flex gap-x-2 items-center">
+      {icon}
+      {text}
+    </div>
+  );
+}
+
 export { JobInfo };
