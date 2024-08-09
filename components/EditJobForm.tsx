@@ -10,15 +10,11 @@ import {
   createAndEditJobSchema,
   CreateAndEditJobType,
 } from "@/utils/types";
-import {
-  createJobAction,
-  getSingleJobAction,
-  updateJobAction,
-} from "@/utils/actions";
+import { getSingleJobAction, updateJobAction } from "@/utils/actions";
 import { Button } from "@/components/ui/button";
 import { Form } from "@/components/ui/form";
 import { useToast } from "@/components/ui/use-toast";
-import { CustomFormField, CustomFormSelect } from "./FormComponents";
+import { CustomFormField, CustomFormSelect } from "@/components/FormComponents";
 
 const EditJobForm = ({ jobId }: { jobId: string }) => {
   const queryClient = useQueryClient();
