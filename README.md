@@ -2400,7 +2400,7 @@ const data = require("./mock-data.json");
 const prisma = new PrismaClient();
 
 async function main() {
-  const clerkId = "user_2ZUfUOtKM8W9eF8hSQbISv7aQmn";
+  const clerkId = "user_2jICvYxcA6B9dIH6wof5ekvomgn";
   const jobs = data.map((job) => {
     return {
       ...job,
